@@ -435,14 +435,9 @@ impl DrawingCtx {
         let units = borrow_element_as!(node, ClipPath).get_units();
 
         if let Ok(transform) = bbox.rect_to_transform(units) {
-            let node_transform = node
-                .borrow_element()
-                .get_transform()
-                .post_transform(&transform);
-
             let cascaded = CascadedValues::new_from_node(node);
 
-            self.with_saved_transform(Some(node_transform), &mut |dc| {
+            self.with_saved_transform(Some(transform), &mut |dc| {
                 let cr = dc.cr.clone();
 
                 // here we don't push a layer because we are clipping
