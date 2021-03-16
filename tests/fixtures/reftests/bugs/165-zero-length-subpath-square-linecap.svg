@@ -1,6 +1,1 @@
-<?xml version="1.0" standalone="no"?>
-<svg width="500" height="200" viewBox="0 0 5 2" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="m1   1 0 0" stroke="black" stroke-linecap="butt" />
-  <path d="m2.5 1 0 0" stroke="black" stroke-linecap="round" />
-  <path d="m4   1 0 0" stroke="black" stroke-linecap="square" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" version="1.1" viewBox="0 0 5 2"><path stroke="#000" stroke-linecap="butt" d="m1 1 0 0"/><path stroke="#000" stroke-linecap="round" d="m2.5 1 0 0"/><path stroke="#000" stroke-linecap="square" d="m4 1 0 0"/></svg>
